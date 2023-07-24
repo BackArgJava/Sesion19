@@ -32,7 +32,7 @@ public class CustomAccessDeniedHandler implements AccessDeniedHandler {
         data.put("status",HttpStatus.FORBIDDEN.value());
         data.put("message", "Access Denied, login again!");
         data.put("path", request.getRequestURL().toString());
-        data.put("pd", "Have a good day :)");
+        data.put("pd", "Have a good day sir :)");
 
         OutputStream out = response.getOutputStream();
         ObjectMapper mapper = new ObjectMapper();
